@@ -38,9 +38,12 @@ let movies = [{
 // for(let movie in movies) {
 //     console.log(movies[movie].title);
 // }
-movies.forEach(function (item) {
-    console.log(item.title);
-});
+// movies.forEach(function (item) {
+//     console.log(item.title);
+// });
+movies.forEach(function (movie) {console.log(movie.title)});
+console.log('************************');
+
 
 // 2. Given an array of car manufacturers, convert the array to a string and back to an array
 let manufacturers = ['BMW', 'Audio', 'Porsche'];
@@ -48,6 +51,9 @@ let str  = manufacturers.join(' ');
 console.log(str);
 let arr_1 = str.split(' ');
 console.log(arr_1);
+
+manufacturers.forEach(console.log);
+console.log('************************');
 
 // 3. Given an array of the names of your friends, add the words hello to each element of the array
 let friends = ['Ira', 'Valera', 'Vitaliy'];
@@ -59,6 +65,7 @@ friends.forEach(function (item) {
     helloFriend.push('Hello, ' + item);
 })
 console.log(helloFriend);
+console.log('************************');
 
 // 4. Convert numeric array to Boolean
 let nums = [34, 0, 4, 12]
@@ -67,11 +74,13 @@ let nums = [34, 0, 4, 12]
 // }
 const bool = nums.map(num => !! num);
 console.log(bool);
+console.log('************************');
 
 // 5. Sort the array [1,6,7,8,3,4,5,6] in descending order
 let array = [1,6,7,8,3,4,5,6];
 array.sort();
 console.log(array);
+console.log('************************');
 
 // 6. Filter array [1,6,7,8,3,4,5,6] by value> 3
 const arr_2 = [1,6,7,8,3,4,5,0,6];
@@ -79,11 +88,13 @@ let results = arr_2.filter(item => item > 3);
     // if true item is pushed to results and the iteration continues
     // returns empty array if nothing found
 console.log(results);
+console.log('************************');
 
 // 7. Write a function that takes two parameters - an array
 // and a number and outputs the index of an array element equal to a number
 const find = (arr, num) => arr.indexOf(num, arr);
 console.log(find(arr_2, 8)); // 3
+console.log('************************');
 
 // 8. Implement a loop that will print the number 'a' until it is less than 10
 const count = (num) => {
@@ -93,6 +104,7 @@ const count = (num) => {
     }
 }
 count(5);
+console.log('************************');
 
 // 9. Implement a loop that prints prime numbers to the console
 function prime(num) {
@@ -114,6 +126,7 @@ function prime(num) {
 }
 
 prime(100);
+console.log('************************');
 
 // 10. Implement a loop that prints odd numbers to the console
 function odd_even(num, str) {
